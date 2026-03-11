@@ -39,3 +39,12 @@ EC2 Virtual Server. (AWS)
         Git add .
         Git commit -m "jenkins file added"
         Git push -u origin main
+12. connect to jenkins with EC2 IP Address
+        http://18.191.30.192:8080
+            password
+        PlugIns
+            1.Git
+            2.Docker
+            3.Docker pipeline
+            4.gitserver
+13. create a pipleline
