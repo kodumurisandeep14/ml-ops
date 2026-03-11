@@ -1,15 +1,7 @@
 pipeline {
     agent any
 
-    stages {
-
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/kodumurisandeep14/ml-ops.git'
-            }
-        }
-
-        stage('Build Docker Image') {
+           stage('Build Docker Image') {
             steps {
                 sh 'docker build -t ml-fastapi-app .'
             }
