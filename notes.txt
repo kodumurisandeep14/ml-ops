@@ -32,3 +32,10 @@ EC2 Virtual Server. (AWS)
 8. Create a Dockerfile
     copy code to Docker image to build docker image  
 9. Push application to GitHub
+
+10.create pipeline
+    Jenkinsfile
+11. Push Jenkinsfile to GitHub  
+        Git add .
+        Git commit -m "jenkins file added"
+        Git push -u origin main
