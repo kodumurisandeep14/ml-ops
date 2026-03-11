@@ -1,0 +1,34 @@
+GitHub
+    Repository 
+
+Jenkins
+    pipeline
+
+Docker
+    image (Run in all OS)
+
+EC2 Virtual Server. (AWS)
+
+1. Create EC2 Instance
+
+2. enable below ports
+    a) 8000 uvicorn TCP
+    b) 8080 Jenkins TCP
+    c) 80 Docker HTTP
+3. Update Ubuntu
+    sudo apt update -y
+4. Install Jenkins
+    Jenkins.io
+5. Install Docker
+    sudo apt update 
+    sudo apt install docker.io -y
+    docker --version 
+6. enable permission globally 
+    sudo usermod -aG docker jenkins
+
+7. get jenkins password
+    sudo cat/var/lib/jenkins/secrets/initialAdminPassword
+    5afa974531194c839b0f3a3d051a45dc
+8. Create a Dockerfile
+    copy code to Docker image to build docker image  
+9. Push application to GitHub
